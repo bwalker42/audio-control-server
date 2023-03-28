@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Navigation Bar Test</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="/css/fontawesome.css" rel="stylesheet">
+        <link href="/css/brands.css" rel="stylesheet">
+        <link href="/css/solid.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page">
+            <div class="navbar">
+                <ul>
+                    <!-- <li><a class="active" id="nav_inputs" href="#inputs" onclick="switchPage(this);"><i class="fa-solid fa-microphone"></i> INPUTS</a></li> -->
+                    <li><a class="active" id="nav_devices" href="#devices" onclick="switchPage(this);"><i class="fa-solid fa-tablet-screen-button"></i> DEVICES</a></li>
+                    <!--<li><a id="nav_outputs" href="#dashboard" onclick="switchPage(this);"><i class="fa-solid fa-table-columns"></i> DASHBOARD</a></li>-->
+                    <li><a id="nav_zones" href="#zones" onclick="switchPage(this);"><i class="fa-solid fa-border-none"></i> ZONES</a></li>
+                    <li><a id="nav_outputs" href="#outputs" onclick="switchPage(this);"><i class="fa-solid fa-volume-low"></i> CIRCUITS</a></li>
+                    <!-- <li><a id="nav_power" href="#power" onclick="switchPage(this);">POWER</a></li> -->
+                    <!-- <li><a id="nav_settings" href="#settings" onclick="switchPage(this);"><i class="fa-solid fa-gear"></i> SETTINGS</a> -->
+                        <div id="nav_settings_menu" class="nav_settings inactive">
+                            <ul>
+                                <li>NETWORK</li>
+                                <li>NETBOOT</li>
+                                <li>CONTROL DEVICES</li>
+                                <li>SWITCHES</li>
+                                <li>POWER</li>
+                                <li>UI EDITOR</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div id="inputs" class="apps" style="background: red;">INPUTS</div> -->
+            <div id="devices" class="apps" style="background: red;"> DEVICES</div>
+            <div id="zones" class="inactive apps" style="background: blue;"> ZONES</div>
+            <div id="circuits" class="inactive apps" style="background: green;"> CIRCUITS</div>
+            <!-- <div id="power" class="inactive apps" style="background: orange">POWER</div> -->
+            <!-- <div id="settings" class="inactive apps" style="background: indigo;">SETTINGS</div> -->
+        </div>
+        <script src="js/nav.js"></script>
+        <script>
+            setInitialSize();
+            initNav();
+        </script>
+
+</body>
+</html>
